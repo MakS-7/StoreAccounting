@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../ExamProject.DAL/ExamProject.DAL.csproj" />
+  <Project Path="ExamProject.csproj" />
+</Solution>
