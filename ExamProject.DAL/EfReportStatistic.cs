@@ -7,7 +7,7 @@ namespace ExamProject.DAL
     public class EfReportStatistic
     {
         // Сумма стоимости всех имеющихся товраов
-        public void ProductPriceSum()
+        public static void ProductPriceSum()
         {
             using (var db = new MyPostgresContext())
             {
@@ -17,7 +17,7 @@ namespace ExamProject.DAL
         }
 
         // Топ 3 товара по стоимости (самые дорогие)
-        public void ProductTopPrice()
+        public static void ProductTopPrice()
         {
             using (var db = new MyPostgresContext())
             {
@@ -31,7 +31,7 @@ namespace ExamProject.DAL
         }
 
         // Группировка продуктов по категориям (категория - количество товаров)
-        public void GroupCategory()
+        public static void GroupCategory()
         {
             using (var db = new MyPostgresContext())
             {

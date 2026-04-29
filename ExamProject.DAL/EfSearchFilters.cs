@@ -8,7 +8,7 @@ namespace ExamProject.DAL
     public class EfSearchFilters
     {
         // Поиск товаров по фрагменту названия
-        public void ProductSearchName(string ProductName)
+        public static void ProductSearchName(string ProductName)
         {
             using (var db = new MyPostgresContext())
             {
@@ -22,7 +22,7 @@ namespace ExamProject.DAL
             }
         }
         // Поиск товара по id
-        public void ProductSearchId(int id)
+        public static void ProductSearchId(int id)
         {
             using (var db = new MyPostgresContext())
             {
@@ -36,7 +36,7 @@ namespace ExamProject.DAL
         }
 
         // Фильтр товаров по категории
-        public void CategoryProducts(int categoryId)
+        public static void CategoryProducts(int categoryId)
         {
             using (var db = new MyPostgresContext())
             {
@@ -49,7 +49,7 @@ namespace ExamProject.DAL
             }
         }
         //Фильтр товаров по поставщику
-        public void SupplierProducts(int supplierId)
+        public static void SupplierProducts(int supplierId)
         {
             using (var db = new MyPostgresContext())
             {
